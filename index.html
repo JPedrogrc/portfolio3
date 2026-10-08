@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedro Garcia | Desenvolvedor Full Stack.</title>
+<meta name="description" content="Pedro Garcia, desenvolvedor Full Stack Jr. em Manaus. Constrói sistemas web da interface ao banco de dados. Disponível para vaga júnior.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pedro Garcia | Desenvolvedor Full Stack Jr.">
+<meta property="og:description" content="Sistemas web da interface ao banco de dados. Veja o GastroTag e outros projetos.">
+<!-- ATUALIZAR: depois de publicar, troque por a URL completa, ex.: https://jpedrogrc.github.io/Portf-lio-2/images/gastrotagimgilustrativa.png -->
+<meta property="og:image" content="images/gastrotagimgilustrativa.png">
+<meta name="theme-color" content="#f7f6f9">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%235a2d8c'/%3E%3Ctext x='50' y='70' font-size='62' font-family='sans-serif' font-weight='800' text-anchor='middle' fill='white'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="bar" aria-label="Navegação principal">
+    <a class="brand" href="#home">Pedro Garcia</a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav">
+      <li><a href="#project">Projetos</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#contact">Contato</a></li>
+      <li><a class="cv" href="Docs/CURRICULO%20João%20Pedro%20Garcia.pdf" download>Baixar CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero wrap" id="home">
+  <div class="hero-copy">
+    <p class="avail"><i></i>Disponível para trabalho</p>
+    <h1>Desenvolvedor Full Stack pronto para solucionar problemas.</h1>
+    <p class="sub">Me chamo João Pedro, Termino Análise e Desenvolvimento de Sistemas no SENAC AM em 2026 e trabalho da interface à API e ao banco de dados.</p>
+    <div class="actions">
+      <a class="btn pri" href="Docs/curriculum.pdf" download><i class="fa-solid fa-download"></i> Baixar currículo</a>
+      <a class="btn" href="#project">Ver projetos</a>
+    </div>
+    <p class="now">Agora estou construindo o <a href="#gastrotag">GastroTag</a>, um sistema de controle de validade para cozinhas profissionais.</p>
+  </div>
+  <figure class="hero-photo"><img src="images/img2.jpeg" alt="Foto de Pedro Garcia" width="470" height="573"></figure>
+</section>
+
+<section class="wrap" id="project">
+  <h2>Projetos</h2>
+
+  <article class="case" id="gastrotag">
+    <img src="images/gastrotagimgilustrativa.png" alt="Tela do GastroTag" width="1280" height="720" loading="lazy">
+    <div class="case-body">
+      <p class="status">Em desenvolvimento</p>
+      <h3>GastroTag</h3>
+      <p class="lead">Sistema web para controlar a validade dos alimentos e gerar etiquetas de identificação em cozinhas profissionais.</p>
+      <!-- ATUALIZAR: confirme o texto abaixo, adicione seu papel no projeto e, se tiver, link de demo ou vídeo curto do sistema -->
+      <dl>
+        <div><dt>Problema</dt><dd>Em cozinhas profissionais, conferir validade e etiquetar cada insumo é um processo manual e sujeito a erros, com risco de desperdício e de uso de itens vencidos.</dd></div>
+        <div><dt>Solução</dt><dd>Uma aplicação web que registra os alimentos, acompanha a validade e gera as etiquetas.</dd></div>
+        <div><dt>Tecnologias</dt><dd class="chips"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Prisma</span><span>Docker</span></dd></div>
+      </dl>
+      <a class="link" href="https://github.com/Gastro-Tag/Gastro-Tag" target="_blank" rel="noopener noreferrer">Ver código no GitHub</a>
+    </div>
+  </article>
+
+  <h3 class="sub-h">Outros projetos</h3>
+  <div class="rows">
+    <article class="row">
+      <img src="images/evoluame.PNG" alt="Evolua-me" width="160" height="110" loading="lazy">
+      <div><h3>Evolua-me</h3><p>Plataforma de estudos adaptativa que organiza o conteúdo em trilhas e atividades interativas, com acompanhamento da evolução.</p></div>
+      <p class="tech">HTML, CSS, JavaScript</p>
+      <p class="lk"><a href="https://jpedrogrc.github.io/projetointerdisciplinar2/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/JPedrogrc/projetointerdisciplinar2" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </article>
+    <article class="row">
+      <img src="images/streamlitproject.PNG" alt="StatForge" width="160" height="110" loading="lazy">
+      <div><h3>StatForge</h3><p>Calculadora interativa de RPG que gera os atributos do personagem a partir da classe e das regras oficiais.</p></div>
+      <p class="tech">Python, Streamlit</p>
+      <p class="lk"><a href="https://statforge-8pppgzfvzgfu4yrkpujlbp.streamlit.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/JPedrogrc/StatForge" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </article>
+    <article class="row">
+      <img src="images/calcimposto.PNG" alt="Calculadora de Impostos" width="160" height="110" loading="lazy">
+      <div><h3>Calculadora de Impostos</h3><p>Compara o salário líquido CLT com o lucro líquido PJ, depois dos impostos, a partir do valor bruto.</p></div>
+      <p class="tech">HTML, CSS, JavaScript</p>
+      <p class="lk"><a href="https://jpedrogrc.github.io/Calculadora-de-Encargos-e-Impostos/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/JPedrogrc/Calculadora-de-Encargos-e-Impostos" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </article>
+    <article class="row">
+      <img src="images/Calculadorawin7.PNG" alt="Calculadora do Windows 7" width="160" height="110" loading="lazy">
+      <div><h3>Calculadora do Windows 7</h3><p>Recriação da calculadora clássica do Windows 7, com as funções e o visual da original.</p></div>
+      <p class="tech">HTML, CSS, JavaScript</p>
+      <p class="lk"><a href="https://jpedrogrc.github.io/Calculadora-do-Windows-7/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/JPedrogrc/Calculadora-do-Windows-7" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </article>
+    <article class="row">
+      <img src="images/Image_fx.jpg" alt="Carrinho autônomo" width="160" height="110" loading="lazy">
+      <div><h3>Carrinho Autônomo</h3><p>Carrinho controlado por uma placa ESP32, com sensores de proximidade para se locomover sozinho.</p></div>
+      <p class="tech">C, C++, ESP32</p>
+      <p class="lk"></p>
+    </article>
+  </div>
+</section>
+
+<section class="wrap" id="about">
+  <h2>Gosto de transformar problemas reais em sistemas que funcionam.</h2>
+  <div class="about-grid">
+    <img class="about-photo" src="images/img.jpg" alt="Pedro programando" width="500" height="560" loading="lazy">
+    <div>
+      <div class="about-copy">
+        <p>Sou desenvolvedor Full Stack Jr. e estudante de Análise e Desenvolvimento de Sistemas no SENAC AM.</p>
+        <p>Penso o sistema inteiro: a interface, a lógica, as APIs, o banco de dados e a forma como tudo isso se conecta.</p>
+        <p>Meu principal projeto hoje é o GastroTag. Estou procurando minha primeira vaga como desenvolvedor júnior, para aprender em time e entregar valor desde cedo.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Mora em</dt><dd>Manaus, AM</dd></div>
+        <div><dt>Formação</dt><dd>ADS, SENAC AM (2025 a 2026)</dd></div>
+        <div><dt>Foco</dt><dd>Desenvolvimento web Full Stack</dd></div>
+        <div><dt>Procura</dt><dd>Vaga de desenvolvedor Júnior</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="stack">
+  <h2>Ferramentas que uso para construir, da interface ao banco de dados.</h2>
+  <div class="layers">
+    <div class="layer open">
+      <button type="button" aria-expanded="true"><h3>Frontend</h3><span class="pm" aria-hidden="true">+</span></button>
+      <div class="pane"><div><p class="t">HTML, CSS, JavaScript, React</p><p>Interfaces responsivas, componentes e boa experiência de uso.</p></div></div>
+    </div>
+    <div class="layer">
+      <button type="button" aria-expanded="false"><h3>Backend</h3><span class="pm" aria-hidden="true">+</span></button>
+      <div class="pane"><div><p class="t">Node.js, Express, Python</p><p>APIs, regras de negócio, autenticação e processamento.</p></div></div>
+    </div>
+    <div class="layer">
+      <button type="button" aria-expanded="false"><h3>Dados</h3><span class="pm" aria-hidden="true">+</span></button>
+      <div class="pane"><div><p class="t">PostgreSQL, SQL, Prisma</p><p>Modelagem, consultas e organização dos dados.</p></div></div>
+    </div>
+    <div class="layer">
+      <button type="button" aria-expanded="false"><h3>Ferramentas</h3><span class="pm" aria-hidden="true">+</span></button>
+      <div class="pane"><div><p class="t">Git, GitHub, Docker, Vite</p><p>Versionamento e ambiente de desenvolvimento.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="contact">
+  <div class="contact">
+    <div>
+      <h2>Tem uma vaga júnior ou um projeto em mente?</h2>
+      <p class="c-sub">Respondo rápido. Escreva pelo formulário, e-mail ou WhatsApp.</p>
+      <ul class="c-links">
+        <li><a href="mailto:jopedrogd1@gmail.com"><i class="fa-solid fa-envelope"></i> jopedrogd1@gmail.com</a></li>
+        <li><a href="https://wa.me/5592992963524" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> +55 92 99296-3524</a></li>
+        <li><a href="https://www.linkedin.com/in/jpedrogrc/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/jpedrogrc</a></li>
+        <li><a href="https://github.com/JPedrogrc" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> github.com/JPedrogrc</a></li>
+      </ul>
+    </div>
+    <form id="contact-form" action="https://formspree.io/f/myzldwna" method="POST">
+      <label for="name">Seu nome</label>
+      <input id="name" name="user_name" type="text" autocomplete="name" required>
+      <label for="email">Seu e-mail</label>
+      <input id="email" name="user_email" type="email" autocomplete="email" required>
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button class="btn pri" type="submit">Enviar mensagem</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer wrap">
+  <p>Pedro Garcia, <span id="year">2026</span>. Feito com HTML, CSS e JavaScript em Manaus.</p>
+  <a href="#home">Voltar ao topo</a>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
