@@ -53,5 +53,42 @@ if (form) {
   });
 }
 
+/* Revelação suave ao rolar a página */
+const reveals = $$('.reveal');
+if (reveals.length) {
+  const revealObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('revealed');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+  reveals.forEach((el) => revealObserver.observe(el));
+}
+
+/* Copiar e-mail com 1 clique */
+const copyBtn = $('.copy-email-btn');
+if (copyBtn) {
+  copyBtn.addEventListener('click', async () => {
+    const email = copyBtn.getAttribute('data-email');
+    try {
+      await navigator.clipboard.writeText(email);
+      const icon = $('i', copyBtn);
+      const tip = $('.copy-tooltip', copyBtn);
+      copyBtn.classList.add('copied');
+      if (icon) icon.className = 'fa-solid fa-check';
+      if (tip) tip.textContent = 'Copiado!';
+      setTimeout(() => {
+        copyBtn.classList.remove('copied');
+        if (icon) icon.className = 'fa-regular fa-copy';
+        if (tip) tip.textContent = 'Copiar';
+      }, 2000);
+    } catch (err) {
+      console.error('Falha ao copiar:', err);
+    }
+  });
+}
+
 /* Ano do rodapé */
 $('#year').textContent = new Date().getFullYear();
